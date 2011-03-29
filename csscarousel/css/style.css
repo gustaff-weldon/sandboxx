@@ -1,0 +1,88 @@
+body {
+    width: 960px;
+    margin: auto;
+}
+.carousel {
+    position: relative;
+    width: 940px;
+    height: 450px;
+    overflow: hidden;
+    z-index: 1;
+} 
+
+.carousel .items li {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.carousel .items li:target {
+    display: block;
+    z-index: 99;
+}
+
+.carousel .nav {
+    overflow: hidden;
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    padding: 5px 5px;
+    z-index: 100; 
+}
+
+.carousel .nav li {
+    float: left;
+}
+
+.carousel .nav a {
+    display: block;
+    color: #fff;
+    margin-left: 10px;
+    background: rgba(0,0,0,0.6);
+    padding: 6px 10px;
+    border: 1px solid #444;
+    border-radius: 10px; 
+    text-decoration: none;  
+}
+
+.carousel .nav a:hover {
+    text-decoration: underline;
+}
+
+.carousel .nav a:active {
+    color: black;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.carousel .items li:target {
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-name: 'slide-in'; 
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes 'slide-in' {
+    0% { left: 940px;}
+    9.99% { left: 940px;}
+    10% { left: 846px;}
+    19.99% { left: 846px;}
+    20% { left: 752px;}
+    29.99% { left: 752px;}
+    30% { left: 658px;}
+    39.99% { left: 658px;}
+    40% { left: 564px;}
+    49.99% { left: 564px;}
+    50% { left: 470px;}
+    59.99% { left: 470px;}
+    60% { left: 376px;}
+    69.99% { left: 376px;}
+    70% { left: 282px;}
+    79.99% { left: 282px;}
+    80% { left: 188px;}
+    89.99% { left: 188px;}
+    90% { left: 94px;}
+    99.99% { left: 94px;}
+    100% { left: 0px;}
+    
+}
