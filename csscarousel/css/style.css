@@ -59,30 +59,10 @@ body {
     -webkit-animation-duration: 0.5s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-name: 'slide-in'; 
-    -webkit-animation-timing-function: linear;
+    -webkit-animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes 'slide-in' {
-    0% { left: 940px;}
-    9.99% { left: 940px;}
-    10% { left: 846px;}
-    19.99% { left: 846px;}
-    20% { left: 752px;}
-    29.99% { left: 752px;}
-    30% { left: 658px;}
-    39.99% { left: 658px;}
-    40% { left: 564px;}
-    49.99% { left: 564px;}
-    50% { left: 470px;}
-    59.99% { left: 470px;}
-    60% { left: 376px;}
-    69.99% { left: 376px;}
-    70% { left: 282px;}
-    79.99% { left: 282px;}
-    80% { left: 188px;}
-    89.99% { left: 188px;}
-    90% { left: 94px;}
-    99.99% { left: 94px;}
-    100% { left: 0px;}
-    
+   from { left: 940px; }
+   to   { left: 0; }    
 }
